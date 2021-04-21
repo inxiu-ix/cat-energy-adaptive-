@@ -141,10 +141,26 @@
 
 
 .promo__content {
+  position: relative;
   background-color: #68b738;
+  background-image: url(../img/index-bg-mobile.jpg);
+  background-repeat: no-repeat;
+  background-position: 0px -78px;;
+  background-size: 100%;
   min-height: 305px;
   padding: 20px;
   width: 100%;
+  &::before {
+    content: "";
+    background-image: url(../img/index-can-mobile.png);
+    display: block;
+    width: 260px;
+    height: 265px;
+    top: 60%;
+    left: 25%;
+    position: absolute;
+    // align-items: center;
+  }
 }
 
 .promo__heading {
@@ -241,27 +257,26 @@
   .promo {
     margin-top: 60px;
     position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      background-color: #68b738;
-      width: 720px;
-      height: 695px;
-      position: absolute;
-      right: 0px;
-      top: -247px;
-      z-index: 0;
-    }
   }
 
   .promo__content {
     background-color: #ffffff;
+    background: 0 0;
     text-align: start;
     min-height: 180px;
     padding: 20px;
     padding-left: 120px;
     padding-right: 222px;
+    &::before {
+      z-index: -1;
+      background-image: url(../img/index-can-tablet.jpg);
+      width: 600px;
+      height: 600px;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      top: 100%;
+      left: 10%;
+    }
   }
   
   .promo__heading {
@@ -291,6 +306,7 @@
     // padding-top: 135px;
     padding-bottom: 22px;
     background-color: #ffffff;
+    background: 0 0;
     text-align: start;
     margin-top: 45px;
   }
@@ -302,7 +318,7 @@
     font-size: 20px;
     line-height: 20px;
     text-transform: uppercase;
-    padding: 16px 26px;
+    padding: 10px 26px;
     margin-left: 90px;
   
     background-color: #68b738;
@@ -317,6 +333,10 @@
     padding: 55px 110px;
   }
 
+  .main-nav {
+    background: 0 0;
+  }
+
   .main-nav__toggle {
     display: none;
   }
@@ -324,8 +344,13 @@
   .nav-list__item {
     font-size: 20px;
     line-height: 25px;
+    text-transform: uppercase;
     font-weight: normal;
     z-index: 1;
+  }
+
+  .nav-list__link {
+    color: #ffffff;
   }
 
   .nav-list__item--active::after {
@@ -345,14 +370,38 @@
     display: block;
   }
 
+  .promo {
+    background: 0 0;
+    min-height: 560px;
+    &::after {
+      content: "";
+      display: block;
+      background-color: #68b738;
+      background-image: url(../img/index-bg-desktop.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 720px;
+      height: 695px;
+      position: absolute;
+      right: 0px;
+      top: -247px;
+      z-index: -1;
+    }
+  }
+
 
   .promo__content {
     padding-left: 190px;
     padding-right: 830px;
+    background: 0 0;
   }
 
   .promo__button {
     margin-left: 170px;
     padding: 10px 26px;
+  }
+
+  .promo__button-container {
+    background: 0 0;
   }
 }
