@@ -202,6 +202,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .main-header__container {
     display: flex;
     padding: 0 30px;
@@ -269,7 +270,7 @@
     padding-right: 222px;
     &::before {
       z-index: -1;
-      background-image: url(../img/index-can-tablet.jpg);
+      background-image: url(../img/index-can-desktop.png);
       width: 600px;
       height: 600px;
       background-repeat: no-repeat;
@@ -323,8 +324,6 @@
   
     background-color: #68b738;
   }
-  
-
   
 }
 
@@ -394,6 +393,12 @@
     padding-left: 190px;
     padding-right: 830px;
     background: 0 0;
+
+    &::before {
+      top: -45%;
+      left: 35%;
+      z-index: 0;
+    }
   }
 
   .promo__button {
