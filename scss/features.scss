@@ -1,0 +1,176 @@
+@import 'variables';
+@import 'mixins';
+
+.container {
+  padding: 0 20px;
+}
+
+.features {
+  font-family: "Oswald", sans-serif;
+  margin-top: 30px;
+}
+
+.features__heading {
+  font-size: 36px;
+  line-height: 60px;
+  color: #000;
+  font-weight: 300;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
+}
+
+.features__item-logo {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background-color: #68b738;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.features__item {
+  display: flex;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: start;
+}
+
+.features__text {
+  padding: 0;
+  margin: 0;
+  margin-top: 5px;
+}
+
+.logo-1::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/fea-logo-1.png);
+  top: 5px;
+  left: 5px;
+}
+
+.logo-2::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/fea-logo-2.png);
+  top: 5px;
+  left: 5px;
+}
+
+.logo-3::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/fea-logo-3.png);
+  top: 5px;
+  left: 5px;
+}
+
+.logo-4::after {
+  position: absolute;
+  content: "";
+  width: 40px;
+  height: 40px;
+  background-image: url(../img/fea-logo-4.png);
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .container {
+    padding: 0 30px;
+    // max-width: 768px;
+  }
+
+  .features {
+    margin-top: 50px;
+  }
+
+  .features__heading {
+    font-size: 60px;
+    text-align: 60px;
+    margin-bottom: 75px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .features__item {
+    flex-direction: column;
+    font-size: 16px;
+    text-align: 24px;
+    width: 250px;
+    padding: 0 40px 60px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 37px 38px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-right: 100px;
+  }
+
+  .features__item-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .logo-1::after {
+    top: 15px;
+    left: 15px;
+  }
+
+  .logo-2::after {
+    top: 15px;
+    left: 15px;
+  }
+
+  .logo-3::after {
+    top: 15px;
+    left: 15px;
+  }
+
+  .logo-4::after {
+    top: 15px;
+    left: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .container {
+    padding: 0 110px;
+  }
+
+  .features__list {
+    flex-wrap: nowrap;
+  }
+
+  .features__item {
+    width: 100%;
+    padding: 0;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    margin-right: 80px;
+    margin-bottom: 0;  
+  }
+
+  .features__last-item {
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .features__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
