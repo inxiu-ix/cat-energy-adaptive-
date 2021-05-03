@@ -215,12 +215,13 @@
   .slider {
     margin: 0 -30px;
     background-image: linear-gradient(#fff 0,#fff 180px,#f2f2f2 180px,#f2f2f2 100%);
+    display: block;
 
   }
 
   .slider__images {
     margin: 10px 0 0;
-    width: 680px;
+    width: 355px;
     height: 535px;
   }
 
@@ -298,45 +299,45 @@
   .example__text {
     padding: 70px 0 60px;
     margin-bottom: 0;
-}
+ }
 
-.example__data {
+ .example__data {
   flex-direction: column;
   align-items: flex-start;
-}
+ }
 
-.example__achievements {
+ .example__achievements {
   justify-content: flex-start;
-}
+ }
 
-.achievement__title {
+ .achievement__title {
   background-color: #f2f2f2;
-}
+ }
 
-.example__costs {
+ .example__costs {
   margin-top: 30px;
   text-align: left;
-}
+ }
 
-.example__costs-amount {
+ .example__costs-amount {
   display: inline-block;
   margin-left: 60px;
-}
+ }
 
-.slider {
+ .slider {
   padding-bottom: 35px;
   margin: 0;
   background-image: linear-gradient(#fff 0,#fff 200px,#f2f2f2 200px,#f2f2f2 100%);
   overflow: visible;
   margin-left: 160px
-}
+ }
 
 .slider__images {
-  width: 650px;
-}
+  width: 360px;
+ }
 
 .slider__actions {
   margin-top: 33px;
-}
+ }
 
 }
