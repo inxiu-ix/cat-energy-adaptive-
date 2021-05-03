@@ -357,6 +357,10 @@
     background-color: #ffffff;
   }
 
+  .programm-page .nav-list__item--active::after {
+    background-color: #68b738;
+  }
+
   .main-header__logo-mobile {
     display: none;
   }
