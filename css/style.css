@@ -234,7 +234,7 @@ a {
   color: #fff; }
 
 @media (min-width: 768px) {
-  .container {
+  .catalog-page .container {
     padding: 0 30px; }
   .catalog__title {
     padding: 35px 0;
@@ -352,6 +352,60 @@ a {
     margin-top: 25px;
     width: 285px;
     text-align: left; } }
+
+@media (min-width: 1200px) {
+  .catalog-page .container {
+    padding: 0 40px; }
+  .catalog__title {
+    padding-top: 50px; }
+  .catalog__item {
+    width: 260px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding: 41px 0; }
+  .product__title {
+    width: 100%; }
+  .product__btn {
+    min-width: 169px; }
+  .more-products__link-title {
+    width: 100%; }
+  .btn--grey {
+    min-width: 169px; }
+  .extra-goods {
+    padding-bottom: 85px; }
+  .extra-goods__title {
+    margin-top: 45px;
+    padding: 0 calc((100vw - 1300px)/2); }
+  .extra-goods__wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .extra-goods__list {
+    margin-bottom: 0; }
+  .extra-goods__item {
+    max-width: 895px;
+    min-width: 895px;
+    padding: 15px 0 16px;
+    border-left: 0;
+    border-right: 0; }
+  .extra-goods__name {
+    text-align: start;
+    width: 32%; }
+  .extra-goods__info {
+    width: 34%; }
+  .extra-goods__price {
+    text-align: left;
+    width: 80px;
+    margin-right: 20px; }
+  .extra-goods__btn {
+    margin: 0;
+    flex: 0 0 245px;
+    min-width: 245px; }
+  .promotion {
+    width: 245px;
+    margin-right: 0; }
+  .promotion__text {
+    margin-top: 15px;
+    text-align: center; } }
 
 .example {
   margin-top: 40px;
@@ -1455,6 +1509,8 @@ a {
     background: 0 0; }
   .main-nav__toggle {
     display: none; }
+  .catalog-page .nav-list__link {
+    color: #000; }
   .nav-list__item {
     font-size: 20px;
     line-height: 25px;
@@ -1467,6 +1523,8 @@ a {
     z-index: 1;
     background-color: #ffffff; }
   .programm-page .nav-list__item--active::after {
+    background-color: #68b738; }
+  .catalog-page .nav-list__item--active::after {
     background-color: #68b738; }
   .main-header__logo-mobile {
     display: none; }
@@ -1688,7 +1746,6 @@ input[type="radio"].visually-hidden {
   color: #fff;
   line-height: 20px;
   background-color: #68b738;
-  min-width: 260px;
   box-sizing: border-box;
   font-weight: 400; }
 

@@ -340,6 +340,10 @@
     display: none;
   }
 
+  .catalog-page .nav-list__link {
+    color: #000;
+  }
+
   .nav-list__item {
     font-size: 20px;
     line-height: 25px;
@@ -358,6 +362,10 @@
   }
 
   .programm-page .nav-list__item--active::after {
+    background-color: #68b738;
+  }
+
+  .catalog-page .nav-list__item--active::after {
     background-color: #68b738;
   }
 
