@@ -47,3 +47,25 @@ input[type="radio"].visually-hidden {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.btn {
+  display: block;
+  min-height: 40px;
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+  line-height: 20px;
+  background-color: #68b738;
+  min-width: 260px;
+  box-sizing: border-box;
+  font-weight: 400;
+}
+
+.btn--grey {
+  color: #000;
+  background-color: #f2f2f2;
+  max-width: 480px;
+  min-width: 280px;
+  margin: 0 auto;
+  width: 100%;
+}
