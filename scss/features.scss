@@ -1,9 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
-.container {
-  padding: 0 20px;
-}
+
 
 .features {
   font-family: "Oswald", sans-serif;
@@ -85,10 +83,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .container {
-    padding: 0 30px;
-    // max-width: 768px;
-  }
+
 
   .features {
     margin-top: 50px;
@@ -147,9 +142,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .container {
-    padding: 0 110px;
-  }
+
 
   .features__list {
     flex-wrap: nowrap;

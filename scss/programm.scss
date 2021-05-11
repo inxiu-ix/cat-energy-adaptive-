@@ -1,9 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
-.container {
-  padding: 0 10px;
-}
+
 
 .programm {
   font-family: "Oswald", sans-serif;
@@ -100,9 +98,7 @@
 
 
 @media (min-width: $tablet-width) {
-  .container {
-    padding: 0 30px;
-  }
+
 
   .programm {
     margin-top: 525px;
@@ -139,9 +135,6 @@
 
 
 @media (min-width: $desktop-width) {
-  .container {
-    padding: 0 110px;
-  }
 
   .programm {
     margin-top: 0px;

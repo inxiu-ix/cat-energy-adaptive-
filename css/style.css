@@ -1,7 +1,7 @@
 .catalog-page {
   font-family: "Oswald", sans-serif; }
 
-.catalog-page .container {
+.container--catalog {
   padding: 0 20px; }
 
 a {
@@ -51,7 +51,7 @@ a {
   flex: 4 0 50%;
   height: auto; }
 
-.product__img--tablet {
+.product-card__img--tablet {
   display: none; }
 
 .product__content {
@@ -234,7 +234,7 @@ a {
   color: #fff; }
 
 @media (min-width: 768px) {
-  .catalog-page .container {
+  .container--catalog {
     padding: 0 30px; }
   .catalog__title {
     padding: 35px 0;
@@ -258,9 +258,9 @@ a {
     width: 100%;
     padding-bottom: 33px;
     align-items: flex-end; }
-  .product__img--tablet {
+  .product-card__img--tablet {
     display: block; }
-  .product__img--mobile {
+  .product-card__img--mobile {
     display: none; }
   .product__content {
     align-self: stretch;
@@ -354,7 +354,7 @@ a {
     text-align: left; } }
 
 @media (min-width: 1200px) {
-  .catalog-page .container {
+  .container--catalog {
     padding: 0 40px; }
   .catalog__title {
     padding-top: 50px; }
@@ -659,9 +659,6 @@ a {
   .slider__actions {
     margin-top: 33px; } }
 
-.container {
-  padding: 0 20px; }
-
 .features {
   font-family: "Oswald", sans-serif;
   margin-top: 30px; }
@@ -733,8 +730,6 @@ a {
   left: 5px; }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0 30px; }
   .features {
     margin-top: 50px; }
   .features__heading {
@@ -774,8 +769,6 @@ a {
     left: 15px; } }
 
 @media (min-width: 1200px) {
-  .container {
-    padding: 0 110px; }
   .features__list {
     flex-wrap: nowrap; }
   .features__item {
@@ -1563,9 +1556,6 @@ a {
     background: 0 0; } }
 
 
-.container {
-  padding: 0 10px; }
-
 .programm {
   font-family: "Oswald", sans-serif; }
 
@@ -1645,8 +1635,6 @@ a {
   text-transform: uppercase; }
 
 @media (min-width: 768px) {
-  .container {
-    padding: 0 30px; }
   .programm {
     margin-top: 525px; }
   .programm__category {
@@ -1669,8 +1657,6 @@ a {
     height: 200px; } }
 
 @media (min-width: 1200px) {
-  .container {
-    padding: 0 110px; }
   .programm {
     margin-top: 0px;
     display: flex; }
@@ -1756,4 +1742,15 @@ input[type="radio"].visually-hidden {
   min-width: 280px;
   margin: 0 auto;
   width: 100%; }
+
+.container {
+  padding: 0 20px; }
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 30px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    padding: 0 110px; } }
 
